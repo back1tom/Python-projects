@@ -25,18 +25,15 @@ print("Your mission is to find the treasure.")
 
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-decision1 = input("You come to a river. Where do you want to go? Type 'left' or 'right'? ")
-decision1 = decision1.lower()
+decision1 = input("You come to a river. Where do you want to go? Type 'left' or 'right'? ").lower()
 if decision1 == "left":
-  decision2 = input("You come to a lake. There is an island in the middle of the lake. Where do you want to go? Type 'wait' to wait for a boat  or 'swim' to swim across? ")
-  decision2 = decision2.lower()
+  decision2 = input("You come to a lake. There is an island in the middle of the lake. Where do you want to go? Type 'wait' to wait for a boat  or 'swim' to swim across? ").lower()
   if decision2 == "wait":
-    decision3 = input("Good choice. You arrived at the island unharmed. There is a house with 3 doors. Red, yellow and blue. Which colour do you choose? ")
-    decision3 = decision3.lower()
+    decision3 = input("Good choice. You arrived at the island unharmed. There is a house with 3 doors. Red, yellow and blue. Which colour do you choose? ").lower()
     if decision3 == "red":
-      print("You were burned by firebirds")
+      print("You were burned by firebirds. Game over.")
     elif decision3 == "blue":
-      print("You were eaten by beasts")
+      print("You were eaten by beasts. Game over.")
     elif decision3 == "yellow":
       print("You WIN !!! Gongrats !!! You found 5 tons of gold")
     else:
