@@ -1,0 +1,13 @@
+import random
+
+
+random_integer = int(input("Create a seed number: "))
+
+random_integer = random.randint(0,9999999999)
+
+#test_seed = round(random.random())
+
+if random_integer % 2 == 1:
+  print("Heads")
+elif random_integer % 2 == 0:
+  print("Tails")
