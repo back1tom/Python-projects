@@ -13,8 +13,7 @@ map[int(position[1])-1][int(position[0])-1] = 'X'
 ##2nd way##
 #vertical = int(position[0])
 #horizontal = int(position[1])
-#treasure_place = mapa[horizontal - 1]
-#treasure_place[vertical - 1] = 'X'
+#mapa[horizontal - 1][vertical - 1] = 'X'
 
 
 print(f"{row1}\n{row2}\n{row3}")
